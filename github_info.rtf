@@ -1,0 +1,243 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 Last login: Tue Mar 22 10:35:38 on ttys000\
+Solomons-MacBook-Air:program5 Solomon$ git\
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.\
+Solomons-MacBook-Air:program5 Solomon$ git\
+usage: git [--version] [--help] [-C <path>] [-c name=value]\
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\
+           <command> [<args>]\
+\
+These are common Git commands used in various situations:\
+\
+start a working area (see also: git help tutorial)\
+   clone      Clone a repository into a new directory\
+   init       Create an empty Git repository or reinitialize an existing one\
+\
+work on the current change (see also: git help everyday)\
+   add        Add file contents to the index\
+   mv         Move or rename a file, a directory, or a symlink\
+   reset      Reset current HEAD to the specified state\
+   rm         Remove files from the working tree and from the index\
+\
+examine the history and state (see also: git help revisions)\
+   bisect     Find by binary search the change that introduced a bug\
+   grep       Print lines matching a pattern\
+   log        Show commit logs\
+   show       Show various types of objects\
+   status     Show the working tree status\
+\
+grow, mark and tweak your common history\
+   branch     List, create, or delete branches\
+   checkout   Switch branches or restore working tree files\
+   commit     Record changes to the repository\
+   diff       Show changes between commits, commit and working tree, etc\
+   merge      Join two or more development histories together\
+   rebase     Forward-port local commits to the updated upstream head\
+   tag        Create, list, delete or verify a tag object signed with GPG\
+\
+collaborate (see also: git help workflows)\
+   fetch      Download objects and refs from another repository\
+   pull       Fetch from and integrate with another repository or a local branch\
+   push       Update remote refs along with associated objects\
+\
+'git help -a' and 'git help -g' list available subcommands and some\
+concept guides. See 'git help <command>' or 'git help <concept>'\
+to read about a specific subcommand or concept.\
+Solomons-MacBook-Air:program5 Solomon$ git init\
+Initialized empty Git repository in /Users/Solomon/Desktop/program5/.git/\
+Solomons-MacBook-Air:program5 Solomon$ git add .\
+Solomons-MacBook-Air:program5 Solomon$ git commit -m\
+error: switch `m' requires a value\
+usage: git commit [<options>] [--] <pathspec>...\
+\
+    -q, --quiet           suppress summary after successful commit\
+    -v, --verbose         show diff in commit message template\
+\
+Commit message options\
+    -F, --file <file>     read message from file\
+    --author <author>     override author for commit\
+    --date <date>         override date for commit\
+    -m, --message <message>\
+                          commit message\
+    -c, --reedit-message <commit>\
+                          reuse and edit message from specified commit\
+    -C, --reuse-message <commit>\
+                          reuse message from specified commit\
+    --fixup <commit>      use autosquash formatted message to fixup specified commit\
+    --squash <commit>     use autosquash formatted message to squash specified commit\
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)\
+    -s, --signoff         add Signed-off-by:\
+    -t, --template <file>\
+                          use specified template file\
+    -e, --edit            force edit of commit\
+    --cleanup <default>   how to strip spaces and #comments from message\
+    --status              include status in commit message template\
+    -S, --gpg-sign[=<key-id>]\
+                          GPG sign commit\
+\
+Commit contents options\
+    -a, --all             commit all changed files\
+    -i, --include         add specified files to index for commit\
+    --interactive         interactively add files\
+    -p, --patch           interactively add changes\
+    -o, --only            commit only specified files\
+    -n, --no-verify       bypass pre-commit hook\
+    --dry-run             show what would be committed\
+    --short               show status concisely\
+    --branch              show branch information\
+    --porcelain           machine-readable output\
+    --long                show status in long format (default)\
+    -z, --null            terminate entries with NUL\
+    --amend               amend previous commit\
+    --no-post-rewrite     bypass post-rewrite hook\
+    -u, --untracked-files[=<mode>]\
+                          show untracked files, optional modes: all, normal, no. (Default: all)\
+\
+Solomons-MacBook-Air:program5 Solomon$ git commit -m "initial commit" -a\
+[master (root-commit) 6209083] initial commit\
+ Committer: Solomon Chan <Solomon@Solomons-MacBook-Air.local>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly. Run the\
+following command and follow the instructions in your editor to edit\
+your configuration file:\
+\
+    git config --global --edit\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 28 files changed, 4005 insertions(+)\
+ create mode 100755 .cproject\
+ create mode 100755 .project\
+ create mode 100755 Debug/makefile\
+ create mode 100755 Debug/objects.mk\
+ create mode 100755 Debug/program5\
+ create mode 100755 Debug/project\
+ create mode 100755 Debug/sources.mk\
+ create mode 100755 Debug/src/dijkstra.d\
+ create mode 100755 Debug/src/dijkstra.o\
+ create mode 100755 Debug/src/driver.d\
+ create mode 100755 Debug/src/driver.o\
+ create mode 100755 Debug/src/driver_graph.d\
+ create mode 100755 Debug/src/driver_graph.o\
+ create mode 100755 Debug/src/subdir.mk\
+ create mode 100755 Debug/src/test_graph.d\
+ create mode 100755 Debug/src/test_graph.o\
+ create mode 100755 flightcost.txt\
+ create mode 100755 flightdist.txt\
+ create mode 100755 src/dijkstra.cpp\
+ create mode 100755 src/dijkstra.hpp\
+ create mode 100755 src/driver_graph.cpp\
+ create mode 100755 src/hash_graph.hpp\
+ create mode 100755 src/hash_map.hpp\
+ create mode 100755 src/hash_set.hpp\
+ create mode 100755 src/heap_priority_queue.hpp\
+ create mode 100755 src/test_graph.cpp\
+ create mode 100755 standard.txt\
+ create mode 100755 store_test.txt\
+Solomons-MacBook-Air:program5 Solomon$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"\
+Generating public/private rsa key pair.\
+Enter file in which to save the key (/Users/Solomon/.ssh/id_rsa): ^C\
+Solomons-MacBook-Air:program5 Solomon$ ssh-keygen -t rsa -b 4096 -C \'93solomonchan33@gmail.com\'94\
+Generating public/private rsa key pair.\
+Enter file in which to save the key (/Users/Solomon/.ssh/id_rsa): \
+Created directory '/Users/Solomon/.ssh'.\
+Enter passphrase (empty for no passphrase): \
+Enter same passphrase again: \
+Your identification has been saved in /Users/Solomon/.ssh/id_rsa.\
+Your public key has been saved in /Users/Solomon/.ssh/id_rsa.pub.\
+The key fingerprint is:\
+d9:bc:89:89:23:d7:9b:9b:98:39:16:cb:f9:5f:b8:23 \'93solomonchan33@gmail.com\'94\
+The key's randomart image is:\
++--[ RSA 4096]----+\
+|                 |\
+|                 |\
+|                 |\
+|         +       |\
+|        S o      |\
+|      .o o +     |\
+|    ..+++ + .    |\
+|     o*=E+.o     |\
+|     .+o*+o.     |\
++-----------------+\
+Solomons-MacBook-Air:program5 Solomon$ ssh-add ~/.ssh/id_rsa\
+Enter passphrase for /Users/Solomon/.ssh/id_rsa: \
+Identity added: /Users/Solomon/.ssh/id_rsa (/Users/Solomon/.ssh/id_rsa)\
+Solomons-MacBook-Air:program5 Solomon$ cat /Users/Solomon/.ssh/id_rsa\
+-----BEGIN RSA PRIVATE KEY-----\
+Proc-Type: 4,ENCRYPTED\
+DEK-Info: AES-128-CBC,4FB0406D014C724C1AFF3018BD95B6DB\
+\
+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\
+-----END RSA PRIVATE KEY-----\
+Solomons-MacBook-Air:program5 Solomon$ cat /Users/Solomon/.ssh/id_rsa.pub\
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCud4e51QG78oCWeEIpy3u8x4ug8Hur5aVdl5/QBQQ3w/sfz81T7vm0amarnbK8memn5xNm2vYjUUrZtl1ndmMTGuutGuOzpCVYCtQ8HpgHmLBXPEP5vNLDcIRx048nEDXjiyKVnJDtnkTY6v+OMt2sF7RzYLwM/5v9UOqESWHHwFapELp6h7JyKmX9bS9lxydhziZIuPeZuk8iXerH3E69+WPrdo2EOHqYo+iNHhmpPLwyFTog8bbPYNjJPrA/wDLT4ASEit5OWBYP/wcDbeY6P+0dFPimOiMI2EsUsHEb7WceMglKOLCk+lz0mC+tIC8vSYgHltRZ/ejI0oQKZLtE8rux5X+hVX3JPVa8RP/90Wo99Dwq5kEhGEH4mjuQdm3mvVxHUCWbB9Mw7cLeYgrJhBFwsWaIBj59UAfIwobuIIX7e+S5NCmJsdD6ptbBER2evk1IA8uf4YcrWKngfqSUvzDgY5MjQ2Yn3L3ODgG/xmO6xZ0R+Rl2l+W0mjJffAqRgLOBV5OTNVh60zClwiG/JzODbze0f6V1KFTniP+CTHZquiLODwzFHbfzP26VrqxsY4FXfdjm/1ui/rr6AoiKIj6BtdTGxCFQPloGbE4GYzQCf8fFv0N9Z51e9OGyIP9P2ppHyI6DEt7Kp4rnfJZnPdaBm8qO7zT1XakAgm1bhw== \'93solomonchan33@gmail.com\'94\
+Solomons-MacBook-Air:program5 Solomon$ git remote add origin https://github.com/solomc1/programFive.git\
+Solomons-MacBook-Air:program5 Solomon$ git push origin master\
+Username for 'https://github.com': solomonchan33@gmail.com\
+Password for 'https://solomonchan33@gmail.com@github.com': \
+Counting objects: 33, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (31/31), done.\
+Writing objects: 100% (33/33), 310.17 KiB | 0 bytes/s, done.\
+Total 33 (delta 4), reused 0 (delta 0)\
+To https://github.com/solomc1/programFive.git\
+ * [new branch]      master -> master\
+Solomons-MacBook-Air:program5 Solomon$ }
